@@ -1,35 +1,35 @@
-import React from 'react';
+import React from "react";
+
+const styles = {
+  linkStyle: {
+    fontSize: "1.2rem",
+  },
+  container: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: 'space-around'
+  },
+};
 
 export default function Nav() {
-  const linkStyle = { border: '1px black', padding: '5px' };
-
   return (
-    <nav className="main-header-menu">
-      <section
-        style={{
-          display: 'flex',
-          fontFamily: 'helvetica',
-          flexDirection: 'row',
-          alignItems: 'flex-start',
-          justifyContent: 'flex-start',
-        }}
-      >
-        <div style={linkStyle}>
-          <a href="#">Home</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">Login</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">Register</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">About</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">Contact</a>
-        </div>
-      </section>
+    <nav style={styles.container}>
+      <div style={styles.linkStyle}>
+        <a href="#">Home</a>
+      </div>
+      <div style={styles.linkStyle}>
+        <a href="#">About me</a>
+      </div>
+      <div style={styles.linkStyle}>
+        <a href="#">Portfolio</a>
+      </div>
+      <div style={styles.linkStyle}>
+        <a href="#">Contact</a>
+      </div>
+      <div style={styles.linkStyle}>
+        <a href="#">C.V</a>
+      </div>
     </nav>
   );
 }
