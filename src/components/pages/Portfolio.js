@@ -1,5 +1,5 @@
 import React from 'react'
-import projects from '../projects'
+import projects from '../../projects'
 
 function createCard(project) {
     return(
