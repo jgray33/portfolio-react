@@ -23,6 +23,11 @@ const responsive = {
 const styles = {
   card: {
     width: "18rem",
+    height: "26rem",
+    display: "flex"
+  },
+  cardBody: {
+    alignSelf: "flex-end"
   },
   img: {
     width: '100%',
@@ -41,12 +46,12 @@ export default function Card({ projects }) {
   <div> 
     <Carousel responsive={responsive}>
   {projects.map((project) => (
-<div key={project.id} class="card" style={styles.card} >
-  <img src={project.image} class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">{project.name}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<div key={project.id} className="card" style={styles.card} >
+  <img src={project.image} className="card-img-top" alt="..."/>
+  <div className="card-body d-flex flex-column" style={styles.cardBody}>
+    <h5 className="card-title">{project.name}</h5>
+    <p className="card-text">{project.description}</p>
+    <a href="#" className="btn btn-primary mt-auto">Repository</a>
   </div>
 </div>
   ))}
@@ -57,21 +62,3 @@ export default function Card({ projects }) {
 }
 
 
-/* <div className="card flex-container" style={styles.card}>
-      <h1>My work</h1>
-      <Carousel responsive={responsive}     >
-      {projects.map((project) => (
-        <div className="card-body" key={project.id}>
-          <h5 className="card-title">{project.name}</h5>
-          <div style={styles.container}>
-              <img style={styles.img} src={project.image}/>
-              </div>
-          <p className="card-text">{project.description}</p>
-          <a href="{project.site}" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
-      ))}
-      </Carousel>
-    </div>
-  */

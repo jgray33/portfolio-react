@@ -1,9 +1,10 @@
 import React from "react";
 
 const styles = {
-  linkStyle: {
+  linkStyle: {  
     fontSize: "1.2rem",
     textDecoration: "none",
+    color: "white"
   },
 
   //   container: {
@@ -16,25 +17,25 @@ const styles = {
 
 export default function Nav({currentPage, handlePageChange}) {
   return (
-    <nav class="flex-container space-around">
-      <div style={styles.linkStyle}>
-        <a href="#home" onClick={() => handlePageChange("Home")}>
+    <nav className="flex-container space-around">
+      <div>
+        <a style= {styles.linkStyle}href="#home" onClick={() => handlePageChange("Home")}>
           Home
         </a>
       </div>
-      <div style={styles.linkStyle}>
-        <a href="#">About me</a>
+      <div>
+        <a style={styles.linkStyle} href="#">About me</a>
       </div>
-      <div style={styles.linkStyle}>
-        <a href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
+      <div>
+        <a style={styles.linkStyle} href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
           Portfolio
         </a>
       </div>
-      <div style={styles.linkStyle}>
-        <a href="#">Contact</a>
+      <div>
+        <a style={styles.linkStyle} href="#">Contact</a>
       </div>
-      <div style={styles.linkStyle}>
-        <a href="#">C.V</a>
+      <div>
+        <a style={styles.linkStyle} href="#">C.V</a>
       </div>
     </nav>
   );
