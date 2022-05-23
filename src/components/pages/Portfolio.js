@@ -23,7 +23,7 @@ const responsive = {
 const styles = {
   card: {
     width: "18rem",
-    height: "26rem",
+    height: "27rem",
     display: "flex"
   },
   cardBody: {
@@ -38,12 +38,17 @@ const styles = {
   container: {
       width: '250px',
       height: '300px'
+  },
+  cards: {
+    paddingTop: "5%",
+    paddingLeft: "5%",
+    marginRight: "auto"
   }
 };
 
 export default function Card({ projects }) {
      return (
-  <div> 
+  <div style={styles.cards}> 
     <Carousel responsive={responsive}>
   {projects.map((project) => (
 <div key={project.id} className="card" style={styles.card} >
