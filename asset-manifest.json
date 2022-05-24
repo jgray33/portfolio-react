@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.74eaeaef.css",
+    "main.js": "/portfolio-react/static/js/main.2fbacd0e.js",
+    "static/media/show-me-more.png": "/portfolio-react/static/media/show-me-more.3a4ea43a97f6c751fa54.png",
+    "static/media/caritas.png": "/portfolio-react/static/media/caritas.c49b1aba192ef7857b0f.png",
+    "static/media/jgcv.pdf": "/portfolio-react/static/media/jgcv.81912ba0318fd8424785.pdf",
+    "static/media/juliaPastry.jpg": "/portfolio-react/static/media/juliaPastry.5181eb8ce863a73dbf30.jpg",
+    "static/media/coding-quiz.png": "/portfolio-react/static/media/coding-quiz.549c892affa767aec8fc.png",
+    "static/media/weather-dashboard.png": "/portfolio-react/static/media/weather-dashboard.defc5ae50a9dde241e46.png",
+    "static/media/tech-blog.png": "/portfolio-react/static/media/tech-blog.9b77e680df29d254f34f.png",
+    "static/media/employee-tracker.png": "/portfolio-react/static/media/employee-tracker.7bde8e80d10eca949ae9.png",
+    "static/media/revicons.eot": "/portfolio-react/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio-react/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio-react/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/portfolio-react/index.html",
+    "main.74eaeaef.css.map": "/portfolio-react/static/css/main.74eaeaef.css.map",
+    "main.2fbacd0e.js.map": "/portfolio-react/static/js/main.2fbacd0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74eaeaef.css",
+    "static/js/main.2fbacd0e.js"
+  ]
+}
