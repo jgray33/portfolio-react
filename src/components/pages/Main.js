@@ -1,5 +1,6 @@
 import React from "react";
 import myImage from "./juliaPastry.jpg";
+import Footer from "../Footer";
 
 const styles = {
   img: {
@@ -40,6 +41,7 @@ export default function Main() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

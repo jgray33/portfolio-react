@@ -1,4 +1,5 @@
 import React from "react";
+import cv from '../assets/jgcv.pdf'
 
 const styles = {
   linkStyle: {  
@@ -32,10 +33,10 @@ export default function Nav({currentPage, handlePageChange}) {
         </a>
       </div>
       <div>
-        <a style={styles.linkStyle} href="#">Contact</a>
+        <a style={styles.linkStyle} href="#contact" onClick={() => handlePageChange ("Contact")}>Contact</a>
       </div>
       <div>
-        <a style={styles.linkStyle} href="#">C.V</a>
+        <a style={styles.linkStyle} href={cv} download>Download C.V</a>
       </div>
     </nav>
   );
