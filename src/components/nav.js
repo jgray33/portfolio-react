@@ -1,42 +1,55 @@
 import React from "react";
-import cv from '../assets/jgcv.pdf'
+import cv from "../assets/jgcv.pdf";
 
 const styles = {
-  linkStyle: {  
+  linkStyle: {
     fontSize: "1.2rem",
     textDecoration: "none",
-    color: "white"
+    color: "white",
   },
-
-  //   container: {
-  //     display: "flex",
-  //     flexDirection: "row",
-  //     flexWrap: "wrap",
-  //     justifyContent: 'space-around'
-  //   },
 };
 
-export default function Nav({currentPage, handlePageChange}) {
+export default function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="flex-container space-around">
       <div>
-        <a style= {styles.linkStyle}href="#home" onClick={() => handlePageChange("Home")}>
+        <a
+          style={styles.linkStyle}
+          href="#home"
+          onClick={() => handlePageChange("Home")}
+          className={currentPage === "home" ? "nav-link red" : "nav-link"}
+        >
           Home
         </a>
       </div>
       <div>
-        <a style={styles.linkStyle} href="#">About me</a>
+        <a style={styles.linkStyle} href="#">
+          About me
+        </a>
       </div>
       <div>
-        <a style={styles.linkStyle} href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
+        <a
+          style={styles.linkStyle}
+          href="#portfolio"
+          onClick={() => handlePageChange("Portfolio")}
+          className={currentPage === "portfolio" ? "nav-link red" : "a"}
+        >
           Portfolio
         </a>
       </div>
       <div>
-        <a style={styles.linkStyle} href="#contact" onClick={() => handlePageChange ("Contact")}>Contact</a>
+        <a
+          style={styles.linkStyle}
+          href="#contact"
+          onClick={() => handlePageChange("Contact")}
+        >
+          Contact
+        </a>
       </div>
       <div>
-        <a style={styles.linkStyle} href={cv} download>Download C.V</a>
+        <a style={styles.linkStyle} href={cv} download>
+          Download C.V
+        </a>
       </div>
     </nav>
   );

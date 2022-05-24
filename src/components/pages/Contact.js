@@ -8,7 +8,14 @@ const styles = {
   },
   input: {
     border: "none",
-    borderBottom: "2px solid white"
+    borderBottom: "2px solid white",
+    display: "inline-block",
+    paddingBottom: "5%"
+  },
+  message: {
+    width: "100%",
+    height: "100%", 
+    marginTop: "5%"
   }
 }
 
@@ -46,8 +53,10 @@ const handleFormSubmit = (e) => {
 }
 
 return(
-    <div className="flex-container">
-    <form className="form">
+  
+    <div className="flex-container" style={styles.container}>
+    <form className="form" style={styles.center}>
+      <div>
       <input style={styles.input}
       value={name}
       name="name"
@@ -55,14 +64,17 @@ return(
       type="text"
       placeholder="Name"
       />
-      <input
+      </div>
+      <div>
+      <input style={styles.input}
       value={email}
       name="email"
       onChange={handleInputChange}
       type="email"
-      placeholder="email"
+      placeholder="Email"
       />
-      <input
+      </div>
+      <input style={styles.message}
       value={message}
       name="message"
       onChange={handleInputChange}
