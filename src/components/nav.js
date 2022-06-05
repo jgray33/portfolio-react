@@ -13,17 +13,10 @@ export default function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="flex-container space-around">
       <div>
-        <a
-          style={styles.linkStyle}
-          href="#home"
-          onClick={() => handlePageChange("Home")}
-          className={currentPage === "home" ? "nav-link red" : "nav-link"}
-        >
-          Home
-        </a>
-      </div>
-      <div>
-        <a style={styles.linkStyle} href="#">
+        <a style={styles.linkStyle}
+         href="#home"
+         onClick={() => handlePageChange("Home")}
+         className={currentPage === "home" ? "a": "red" }>
           About me
         </a>
       </div>

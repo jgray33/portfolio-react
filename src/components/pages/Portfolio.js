@@ -29,7 +29,7 @@ const styles = {
   cardBody: {
     alignSelf: "flex-end"
   },
-  img: {
+  image: {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
@@ -43,7 +43,18 @@ const styles = {
     paddingTop: "5%",
     paddingLeft: "5%",
     marginRight: "auto"
-  }
+  },
+  button: {
+    backgroundColor:"#648381",
+    color: "white",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+    textDecoration: "none",
+    padding: "10px",
+    borderRadius: "10px",
+    position: "absolute",
+    bottom: 0,
+    marginBottom: "5%"
+      }
 };
 
 export default function Card({ projects }) {
@@ -52,11 +63,18 @@ export default function Card({ projects }) {
     <Carousel responsive={responsive}>
   {projects.map((project) => (
 <div key={project.id} className="card" style={styles.card} >
-  <img src={project.image} className="card-img-top" alt="..."/>
-  <div className="card-body d-flex flex-column" style={styles.cardBody}>
+    <img src={project.image} alt="..."/>
+  <div className="card-body">
     <h5 className="card-title">{project.name}</h5>
     <p className="card-text">{project.description}</p>
-    <a href="#" className="btn btn-primary mt-auto">Repository</a>
+    <div class="row">
+      <div class="col">
+    <a href={project.gitHub} style={styles.button}>Repository</a>
+    </div>
+      <div class="col">
+    <a href={project.siteAddress} style={styles.button}>Visit app</a>
+    </div>
+    </div>
   </div>
 </div>
   ))}

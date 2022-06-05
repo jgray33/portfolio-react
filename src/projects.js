@@ -22,8 +22,7 @@ const projects = [
         name: "Employee Tracker",
         description: "Built in Node.js, this handle little programme allows the user to keep a track of their employees' juicy details such as their salary and job title.",
         image: require('./assets/employee-tracker.png'),
-        siteAddress: "",
-        walkThrough: 'https://www.youtube.com/watch?v=O52OjCItHIU',
+        siteAddress: 'https://www.youtube.com/watch?v=O52OjCItHIU',
         gitHub: "https://github.com/jgray33/employee-tracker",
         technologiesUsed:["HTML",'CSS', 'API', 'JavaScript']
     },
