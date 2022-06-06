@@ -19,3 +19,14 @@
   align-items: flex-end;
     }
 
+.nav-active {
+  text-decoration: underline;
+  text-decoration: none;
+  color: #648381;
+}
+
+.nav-inactive {
+  color: white;
+  text-decoration: none;
+
+  }

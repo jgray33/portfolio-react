@@ -17,7 +17,6 @@ const styles = {
     height: "50px",
     bottom: "0",
     width: "100%",
-    marginBottom: "1%"
   },
 };
 

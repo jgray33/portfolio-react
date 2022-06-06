@@ -63,8 +63,7 @@ export default function CV() {
             <li>Flexbox</li>
             <li>Media Queries</li>
             <li>Responsive layouts</li>
-            <li></li>
-          </ul>
+            </ul>
         </div>
         <div style={styles.card}>
           <h3> Back End</h3>
