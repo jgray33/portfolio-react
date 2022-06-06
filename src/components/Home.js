@@ -27,6 +27,7 @@ export default function PageContainer() {
     <div>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer/>
       </div>
   );
 }
