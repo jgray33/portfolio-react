@@ -5,6 +5,7 @@ import Main from "./pages/Main";
 import projects from "../projects";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
+import CV from './pages/CV'
 
 export default function PageContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -18,6 +19,9 @@ export default function PageContainer() {
     }
     if (currentPage === "Contact") {
       return <Contact />;
+    }
+    if (currentPage === "CV") {
+      return <CV />;
     }
   };
 

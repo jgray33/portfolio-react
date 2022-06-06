@@ -40,6 +40,15 @@ export default function Nav({ currentPage, handlePageChange }) {
         </a>
       </div>
       <div>
+        <a
+          style={styles.linkStyle}
+          href="#skills"
+          onClick={() => handlePageChange("CV")}
+        >
+          My Skills
+        </a>
+      </div>
+      <div>
         <a style={styles.linkStyle} href={cv} download>
           Download C.V
         </a>
