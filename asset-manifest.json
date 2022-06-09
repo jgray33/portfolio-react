@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.ee732af8.css",
-    "main.js": "/portfolio-react/static/js/main.9f5e437a.js",
+    "main.css": "/portfolio-react/static/css/main.3fba2598.css",
+    "main.js": "/portfolio-react/static/js/main.d1726719.js",
     "static/media/show-me-more.png": "/portfolio-react/static/media/show-me-more.3a4ea43a97f6c751fa54.png",
     "static/media/caritas.png": "/portfolio-react/static/media/caritas.c49b1aba192ef7857b0f.png",
     "static/media/jgcv.pdf": "/portfolio-react/static/media/jgcv.81912ba0318fd8424785.pdf",
@@ -14,11 +14,11 @@
     "static/media/revicons.ttf": "/portfolio-react/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/portfolio-react/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio-react/index.html",
-    "main.ee732af8.css.map": "/portfolio-react/static/css/main.ee732af8.css.map",
-    "main.9f5e437a.js.map": "/portfolio-react/static/js/main.9f5e437a.js.map"
+    "main.3fba2598.css.map": "/portfolio-react/static/css/main.3fba2598.css.map",
+    "main.d1726719.js.map": "/portfolio-react/static/js/main.d1726719.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee732af8.css",
-    "static/js/main.9f5e437a.js"
+    "static/css/main.3fba2598.css",
+    "static/js/main.d1726719.js"
   ]
 }
